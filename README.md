@@ -1,4 +1,4 @@
-# Monopoly-Simulation
+# sQL-Monopoly-Simulation
 
 This project aims to simulate a Monopoly tournament using MySQL. The board the game uses is based on Manchester, United Kingdom, which is shown below. The game has 4 players: Jane, Norman, Mary, and Bill. It uses a 6-sided die to make moves, and each square has different **landing effects**:
 
