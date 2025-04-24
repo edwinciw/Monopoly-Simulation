@@ -1,6 +1,6 @@
 # Monopoly-Simulation
 
-This project aims to simulate a Monopoly tournament using SQL. The board the game uses is based on Manchester, United Kingdom, which is shown below. The game has 4 players: Jane, Norman, Mary, and Bill. It uses a 6-sided die to make moves, and each square has different **landing effects**:
+This project aims to simulate a Monopoly tournament using MySQL. The board the game uses is based on Manchester, United Kingdom, which is shown below. The game has 4 players: Jane, Norman, Mary, and Bill. It uses a 6-sided die to make moves, and each square has different **landing effects**:
 
 <p align="center">
   <img src="monopoly.jpg"/>
@@ -59,17 +59,21 @@ Some defaults and triggers are implemented in the database to automate core game
 
 ## How to Run
 
+### Prerequisites:
+- MySQL (SQL WorkBench)
+- Basic knowledge of SQL
+
 To run the database and start simulation, here are all the files and queries within the **queries** folder:
 
 1. **start_game**:
-  - *create.sql*: Set up the database schema in MySQL and define all triggers.
-  - *populate.sql*: Insert all informations for a game simulation for all tables to start the game.
+  - *create.sql*: **Define** the database schema in MySQL and all triggers.
+  - *populate.sql*: **Insert** all informations for a game simulation for all tables to start the game.
 
 2. **game_state**:
-  - *view.sql*: This creates a view table displaying the current player performance in the game, including whether they bankrupted.
+  - *view.sql*: This creates a view table **displaying** the current **player performance** in the game, including whether they bankrupted.
 
 3. **game_moves**:
-  - This folder contains 8 total game moves (*q1* ~ *q8*) for the players Jane, Norman, Mary, and Bill in 2 rounds, this is used to cross-check the accuracy of the game logic and updates implemented.
+  - This folder contains 8 total **game moves** (*q1* ~ *q8*) for the players Jane, Norman, Mary, and Bill in 2 rounds, this is used to **cross-check** the accuracy of the game logic and updates implemented.
 
 ## Future Works
 
