@@ -67,13 +67,13 @@ To run the database and start simulation, here are all the files and queries wit
 
 1. **start_game**:
   - *create.sql*: **Define** the database schema in MySQL and all triggers.
-  - *populate.sql*: **Insert** all informations for a game simulation for all tables to start the game.
+  - *populate.sql*: **Insert** all information for a game simulation for all tables to start the game.
 
 2. **game_state**:
   - *view.sql*: This creates a view table **displaying** the current **player performance** in the game, including whether they bankrupted.
 
 3. **game_moves**:
-  - This folder contains 8 total **game moves** (*q1* ~ *q8*) for the players Jane, Norman, Mary, and Bill in 2 rounds, this is used to **cross-check** the accuracy of the game logic and updates implemented.
+  - This folder contains 8 total **game moves** (*q1* through *q8*) for the players Jane, Norman, Mary, and Bill in 2 rounds, this is used to **cross-check** the accuracy of the game logic and updates implemented.
 
 ## Future Works
 
