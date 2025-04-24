@@ -26,19 +26,15 @@ The design of the relational database is shown by the Crow's Foot diagram below,
 
 - `Location` and `Bonus`:  
   One-to-one — each location may have a bonus.
-
 - `Location` and `Player`:  
   One-to-many — each player is at one location.
-
 - `Location` and `Properties`:  
   One-to-one — not every location is a property, but every property must reference a location.
-
 - `Player` and `Properties`:  
   One-to-many — a player may own many properties; a property may be unowned.
-
 - `Player` and `Audit_Trail`:  
   One-to-many — players have multiple audit records during the game.
-
+  
 ## Moves Update and Game Logic
 
 Some defaults and triggers are implemented in the database to automate core game logic based on square effects:
@@ -65,14 +61,14 @@ Some defaults and triggers are implemented in the database to automate core game
 
 To run the database and start simulation, here are all the files and queries within the **queries** folder:
 
-1.**start_game**:
+1. **start_game**:
   - *create.sql*: Set up the database schema in MySQL and define all triggers.
   - *populate.sql*: Insert all informations for a game simulation for all tables to start the game.
 
-2.**game_state**:
+2. **game_state**:
   - *view.sql*: This creates a view table displaying the current player performance in the game, including whether they bankrupted.
 
-3.**game_moves**:
+3. **game_moves**:
   - This folder contains 8 total game moves (*q1* ~ *q8*) for the players Jane, Norman, Mary, and Bill in 2 rounds, this is used to cross-check the accuracy of the game logic and updates implemented.
 
 ## Future Works
