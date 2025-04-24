@@ -63,11 +63,8 @@ Some defaults and triggers are implemented in the database to automate core game
 
 ## How to Run
 
-To run the simulation:
-1. Set up the database using your preferred SQL environment.
-2. Insert initial data for `Location`, `Bonus`, and `Properties`.
-3. Add players to the `Player` table.
-4. Use triggers to handle moves and automate game rules.
+To run the database and start simulation, here are all the files and queries within the *queries* folder:
+****
 
 ## Future Works
 
