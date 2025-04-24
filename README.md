@@ -19,3 +19,6 @@ This project aims to simulate a Monopoly tournament using SQL. The board the gam
 ## Data Schema
 The design of the relational database is shown by the Crow's Foot diagram below, which highlights the relationships between tables and the keys each table has. It is in second normal form where all attributes are dependent on the primary key of their respective table, which improves data integrity by eliminating partial dependencies between tables.
 
+<p align="center">
+  <img src="monopoly_cfd.svg"/>
+</p>
