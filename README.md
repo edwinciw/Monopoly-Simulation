@@ -55,7 +55,7 @@ Some defaults and triggers are implemented in the database to automate core game
 - **Landing on a Property**:  
   Automatically deducts the purchase price or rent from the player's balance. If the player owns all properties of that colour, rent is doubled.
 
-- **`Audit_Trail`**:  
+- **Audit Trail**:  
   Auto-fills with current round, balance, and ending location whenever a player's status is updated.
 
 - **Location Description Update**:  
@@ -63,15 +63,24 @@ Some defaults and triggers are implemented in the database to automate core game
 
 ## How to Run
 
-To run the database and start simulation, here are all the files and queries within the *queries* folder:
-****
+To run the database and start simulation, here are all the files and queries within the **queries** folder:
+**start_game**:
+  - *create.sql*:
+    Set up the database schema in MySQL and define all triggers.
+  - *populate.sql*:
+    Insert all informations for a game simulation for all tables to start the game.
+**game_state**:
+  - *view.sql*:
+    This creates a view table displaying the current player performance in the game, including whether they bankrupted.
+**game_moves**:
+  This folder contains 8 total game moves (*q1* ~ *q8*) for the players Jane, Norman, Mary, and Bill in 2 rounds, this is used to cross-check the accuracy of the game logic and updates implemented.
 
 ## Future Works
 
 - **Chance and Community Chest Automation:**  
   Triggers will be implemented to simulate effects when landing on these squares. Examples include random monetary gains/losses or moving spaces forward.
 
-- **`Token` Table for Higher Normalization:**  
+- **Token Table for Higher Normalization:**  
   A dedicated `Token` table may be introduced to separate tokens from player identity, improving normalization and enhancing data integrity.
 
 - **Web Interface for Online Gameplay:**  
